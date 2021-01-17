@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<form method="POST"
+           action="http://localhost:8080/dispair"
+           enctype="multipart/form-data">
+    <h1>Demo of Dispair</h1>
+    <table>
+        <tr>
+            <td>Filename Of Destruction</td>
+            <td><input type="text" name="filenameOfDestruction" /></td>
+        </tr>
+        <tr>
+            <td>Associated Email</td>
+            <td><input type="text" name="associatedEmail" /></td>
+        </tr>
+        <tr>
+            <td>Beasts to unleash:
+                <br /><input type="checkbox" name="horribleCheckboxesOfDestruction" value="Kraken" />Kraken
+                <br />                <input type="checkbox" name="horribleCheckboxesOfDestruction" value="Godzilla" />Godzilla
+                <br />                <input type="checkbox" name="horribleCheckboxesOfDestruction" value="Cheese Cake" />Cheese Cake
+                <br /><input type="checkbox" name="horribleCheckboxesOfDestruction" value="Another Kraken" />Another Kraken
+                <br /><input type="checkbox" name="horribleCheckboxesOfDestruction" value="King Kong" />King Kong
+            </td>
+        </tr>
+        <tr>
+            <td>File Of Destruction <span style="font-size:0.7em; color: grey">(max. 128kB, because I said so in application.properties)</span></td>
+            <td><input type="file" name="fileOfDestruction" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Unleash the beast (Upload)" /></td>
+        </tr>
+    </table>
+</form>
+</html>
